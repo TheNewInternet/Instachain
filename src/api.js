@@ -142,7 +142,7 @@ const getPosts = async () => {
 
     for (let i = 0; i < postHashes.length; i += 1) {
       captions.push(
-        fetch(`https://gateway.ipfs.io/ipfs/${postHashes[i].text}`).then(
+        fetch(`https://ipfs.io/ipfs/${postHashes[i].text}`).then(
           (res) => res.text()
         )
       );
@@ -150,7 +150,7 @@ const getPosts = async () => {
 
     for (let i = 0; i < postHashes.length; i += 1) {
       types.push(
-        fetch(`https://gateway.ipfs.io/ipfs/${postHashes[i].fileType}`).then(
+        fetch(`https://ipfs.io/ipfs/${postHashes[i].fileType}`).then(
           (res) => res.text()
         )
       );
@@ -165,7 +165,7 @@ const getPosts = async () => {
         key: `key${i}`,
         caption: postCaptions[i],
         fileType: postFileType[i],
-        src: `https://gateway.ipfs.io/ipfs/${postHashes[i].img}`,
+        src: `https://ipfs.io/ipfs/${postHashes[i].img}`,
       });
     }
 

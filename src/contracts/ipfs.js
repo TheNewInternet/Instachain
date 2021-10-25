@@ -6,7 +6,7 @@ import IPFS from "ipfs-http-client";
  * IPFS using infura as host, for use.
  */
 const ipfs = new IPFS({
-  host: "cloudflare-ipfs.com",
+  host: "infura-ipfs.io",
   // port: 5001,
   protocol: "https",
 });
