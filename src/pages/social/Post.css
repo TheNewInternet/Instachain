@@ -1,24 +1,24 @@
 .post-index {
   width: 400px;
-  height: 450px;
   margin: 10px;
+  padding: 10px;
   padding-top: 20px;
-  background-color: #27272c;
-  border: #f2f2f2;
-  border-style: solid;
+  background-color: #dddddd46;
   border-radius: 1rem;
-  text-align: center;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
 }
 
 .post-item {
+  background-color: #dddddd46;
   margin: 20px;
   display: flex;
-  background-color: #353547;
-  color: #f2f2f2;
+  justify-content: center;
+  color: #ffffff;
   border-style: solid;
   border-radius: 1rem;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
 }
-.post-item-title {
+.post-pen-icon {
   padding: 10px;
 }
 .post-img-input {
@@ -26,10 +26,10 @@
   position: relative;
 }
 .post-textarea {
-  font-family: monospace;
+  width: 90%;
+  height: 100px;
   padding: 5px;
   color: #f2f2f2;
-  /*text-shadow: 0 0 0.2em rgb(201, 119, 255);*/
   align-content: center;
   border-style: none;
   resize: none;
@@ -37,22 +37,50 @@
 }
 
 .folder {
+  display: flex;
+  justify-content: center;
   height: 250px;
   width: 250px;
 }
 .folder-icon {
   padding-top: 40px;
 }
-.post-submit-btn {
-  width: 100px;
+.post-btn-border {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+.post-close-btn {
+  width: 80px;
   padding: 10px;
-  color: #f2f2f2;
-  font-family: monospace;
-  background-image: linear-gradient(
-    -225deg,
-    #32e48b 0%,
-    #18a2f2 48%,
-    #4801ff 100%
-  );
-  border-radius: 1rem;
+  color: #ffffff;
+  /* background-color: #ffffff44; */
+  background-image: linear-gradient(-225deg, #ea01ff 0%, #f28fff 100%);
+  font-family: Verdana;
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+.post-submit-btn {
+  width: 80px;
+  padding: 10px;
+  color: #ffffff;
+  /* background-color: #ffffff44; */
+  background-image: linear-gradient(-225deg, #0151ff 0%, #8198fc 100%);
+  font-family: Verdana;
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+.plus-icon-border {
+  /* background-color: #c4c4c498; */
+  background-image: linear-gradient(-225deg, #ea01ff 0%, #f28fff 100%);
+  color: #ffffff;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
 }

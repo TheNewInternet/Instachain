@@ -28,7 +28,7 @@ const Navbar = ({ toggle }) => {
           </motion.div>
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
             <Link to="/Social" className="menu-icon">
-            Social
+              Social
             </Link>
           </motion.div>
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>

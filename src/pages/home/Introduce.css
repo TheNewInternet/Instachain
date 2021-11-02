@@ -29,30 +29,18 @@
 }
 
 .introduce-btn {
-  font-family: monospace;
-  color: #f2f2f2;
+  font-family: Verdana;
+  color: #ffffff;
   padding: 1rem 2rem;
   font-size: 1rem;
-  background-image: linear-gradient(
-    -225deg,
-    #32e48b 0%,
-    #18a2f2 48%,
-    #4801ff 100%
-  );
+  /* background-color: #c4c4c498; */
+  background-image: linear-gradient(-225deg, #0151ff 0%, #8198fc 100%);
   cursor: pointer;
+  border-style: none;
   border-radius: 50px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
 }
 
-.introduce-btn:hover {
-  font-family: monospace;
-  background-image: linear-gradient(
-    -225deg,
-    #4801ff 0%,
-    #18a2f2 48%,
-    #32e48b 100%
-  );
-  color: #f2f2f2;
-}
 .introduce-index-right {
   display: flex;
   justify-content: center;

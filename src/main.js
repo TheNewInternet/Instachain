@@ -4,7 +4,7 @@ import Navbar from "./pages/navbar/Navbar";
 import Sidebar from "./pages/sidebar/Sidebar";
 
 //import Market from "./pages/market/Market";
-import Social from "./pages/social/Social"
+import Social from "./pages/social/Social";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import { useState } from "react";

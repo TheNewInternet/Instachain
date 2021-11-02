@@ -24,15 +24,20 @@ const Introduce = () => {
           Not afraid of crashes, not afraid of being deleted, record important
           information, Here.
         </motion.p>
-        <Link to="/Market">
-          <motion.button
+        <Link to="/Social">
+          <motion.div
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 2 }}
-            className="introduce-btn"
           >
-            Get Started
-          </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="introduce-btn"
+            >
+              Get Started
+            </motion.button>
+          </motion.div>
         </Link>
       </div>
       <motion.div

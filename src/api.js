@@ -20,9 +20,9 @@ let loading = false;
  */
 const captureFile = (file) => {
   const reader = new FileReader();
-  console.log(file)
+  console.log(file);
   if (typeof file !== "undefined") {
-    captureFileType(file.type)
+    captureFileType(file.type);
     reader.readAsArrayBuffer(file);
     reader.onloadend = async () => {
       buffer = await convertToBuffer(reader.result);
@@ -142,16 +142,16 @@ const getPosts = async () => {
 
     for (let i = 0; i < postHashes.length; i += 1) {
       captions.push(
-        fetch(`https://ipfs.io/ipfs/${postHashes[i].text}`).then(
-          (res) => res.text()
+        fetch(`https://ipfs.io/ipfs/${postHashes[i].text}`).then((res) =>
+          res.text()
         )
       );
     }
 
     for (let i = 0; i < postHashes.length; i += 1) {
       types.push(
-        fetch(`https://ipfs.io/ipfs/${postHashes[i].fileType}`).then(
-          (res) => res.text()
+        fetch(`https://ipfs.io/ipfs/${postHashes[i].fileType}`).then((res) =>
+          res.text()
         )
       );
     }

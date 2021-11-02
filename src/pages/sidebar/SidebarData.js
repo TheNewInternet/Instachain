@@ -11,7 +11,7 @@ const SidebarData = [
   },
   {
     title: "Wallet",
-    path: "###",
+    path: "/",
     icon: <i class="fas fa-wallet" />,
   },
   {

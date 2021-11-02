@@ -1,5 +1,5 @@
 .sidebar-index {
-  background-color: #27272c;
+  background-color: #c4c4c498;
   width: 300px;
   height: 100%;
   z-index: 999;
@@ -24,41 +24,55 @@
   width: 100%;
 }
 .menu-bar {
-  padding-top: 1.5rem;
-  padding-left: 16rem;
-  padding-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  /* background-color: #c4c4c498; */
+  background-image: linear-gradient(-225deg, #ea01ff 0%, #f28fff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
 }
-.times-icon {
-  color: #f2f2f2;
+.angle-icon {
+  color: #ffffff;
 }
 .sidebar-menu-items {
-  color: #f2f2f2;
+  color: #ffffff;
   padding: 10px 20px;
   text-align: center;
 }
 .menu-item-border {
-  background-color: #353547;
+  /* background-color: #c4c4c498; */
+  background-image: linear-gradient(-225deg, #0151ff 0%, #8198fc 100%);
   width: 95%;
   height: 60px;
   display: flex;
   align-items: center;
   padding: 0 7px;
-  border-radius: 4px;
+  border-radius: 10px;
   text-decoration: none;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
 }
 .menu-text {
-  color: #f2f2f2;
+  color: #ffffff;
 }
 .menu-btn-border {
   text-align: center;
   padding-top: 10rem;
 }
 .menu-btn {
-  font-family: monospace;
-  color: #f2f2f2;
+  font-family: Verdana;
+  color: #ffffff;
   padding: 1.5rem 2.5rem;
-  background-color: #353547;
+  /* background-color: #c4c4c498; */
+  background-image: linear-gradient(-225deg, #ea01ff 0%, #f28fff 100%);
   cursor: pointer;
   border-style: none;
   border-radius: 50px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
 }

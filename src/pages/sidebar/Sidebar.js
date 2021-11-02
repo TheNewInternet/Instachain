@@ -16,14 +16,13 @@ const DropDown = ({ isOpen, toggle }) => {
       onClick={toggle}
     >
       <div className="sidebar-menu">
-        <div className="menu-bar">
-          <motion.i
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            className="fas fa-times fa-2x times-icon"
-            onClick={toggle}
-          />
-        </div>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="menu-bar"
+        >
+          <i className="fas fa-angle-right angle-icon" onClick={toggle} />
+        </motion.div>
         {SidebarData.map((item, index) => {
           return (
             <motion.div
