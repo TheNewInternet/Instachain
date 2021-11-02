@@ -4,13 +4,11 @@
 }
 
 body {
-  font-family: monospace;
+  font-family: Verdana;
 }
 body {
   margin: 0;
-  background: #2f2f50;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(90deg, #ea01ff 0%, #0151ffe3 100%);
 }
 
 code {

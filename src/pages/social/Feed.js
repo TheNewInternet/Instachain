@@ -1,33 +1,9 @@
 import "./Feed.css";
-import Post from "./Post";
-import { v4 } from "uuid";
 
-import { getPosts, updateAccount } from "../../api";
+import { motion } from "framer-motion";
 
-function Blog(props) {
-  const content = props.posts.map((post) => (
-    // <div className="blog-index-item">{post.fileType}</div>
-    <div className="blog-index">
-      <div>{post.owner}</div>
-      <div key={v4()}>
-        {post.fileType.startsWith("video") ? (
-          <video
-            src={post.src}
-            controls
-            alt="post-video"
-            className="blog-index-img"
-          />
-        ) : (
-          <img src={post.src} alt="" className="blog-index-img" />
-        )}
-        <div className="blog-index-img-border">
-          <div className="blog-index-item">{post.caption}</div>
-        </div>
-      </div>
-    </div>
-  ));
-  return <div>{content}</div>;
-}
+import Blog from "./Blog";
+import { getPosts } from "../../api";
 
 let posts = [];
 
@@ -37,11 +13,19 @@ const getList = async () => {
 getList();
 
 const Feed = () => {
-  return (
-    <div className="feed-index">
-      <Blog posts={posts} />
-    </div>
-  );
+  return posts.map((post) => {
+    const { src, caption, fileType } = post;
+    return (
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="feed-index"
+      >
+        <Blog src={src} caption={caption} fileType={fileType} />
+      </motion.div>
+    );
+  });
 };
 
 export default Feed;

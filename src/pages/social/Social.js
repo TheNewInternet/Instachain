@@ -14,8 +14,8 @@ const Social = () => {
   return (
     <div className="social-index">
       <div>
-      <Post />
-      <Feed />
+        <Post />
+        <Feed />
       </div>
     </div>
   );
