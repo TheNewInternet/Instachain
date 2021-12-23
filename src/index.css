@@ -8,7 +8,7 @@ body {
 }
 body {
   margin: 0;
-  background-image: linear-gradient(90deg, #ea01ff 0%, #0151ffe3 100%);
+  background-image: linear-gradient(90deg, #0151ffe3 0%, #ea01ff 100%);
 }
 
 code {

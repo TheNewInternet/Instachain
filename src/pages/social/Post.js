@@ -48,23 +48,27 @@ const Post = () => {
         >
           <div className="post-btn-border">
             <motion.input
-             whileHover={{ scale: 1.1 }}
-             whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
               type="button"
               value="Close"
               className="post-close-btn"
               onClick={BackToIcon}
             />
             <motion.input
-             whileHover={{ scale: 1.1 }}
-             whileTap={{ scale: 0.95 }}
-              type="submit" value="Submit" className="post-submit-btn" />
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              type="submit"
+              value="Submit"
+              className="post-submit-btn"
+            />
           </div>
           <label className="post-item">
             <motion.div
-             whileHover={{ scale: 1.1 }}
-             whileTap={{ scale: 0.95 }}
-              className="folder-border">
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="folder-border"
+            >
               <div className="folder">
                 <input
                   type="file"
@@ -74,7 +78,7 @@ const Post = () => {
                   onChange={fileChange}
                 />
                 <label htmlFor="upload-input">
-                  <i //className="fas fa-folder-plus fa-10x folder-icon" 
+                  <i //className="fas fa-folder-plus fa-10x folder-icon"
                   />
                 </label>
               </div>

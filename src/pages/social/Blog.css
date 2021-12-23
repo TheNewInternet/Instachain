@@ -2,19 +2,21 @@
   color: #ffffff;
   background-color: #dddddd46;
   height: 530px;
-  margin-top: 20px;
   padding: 10px;
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
-  text-align: center;
   align-content: center;
 }
 .blog-index-text-border {
-  margin-top: 10px;
-  height: 135px;
+  margin-top: 0.5rem;
+  height: 5rem;
   background-color: #dddddd46;
   border-radius: 1rem;
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+.blog-index-caption {
+  font-size: 0.85rem;
+  text-align: left;
 }
 .blog-index-img {
   height: 380px;
@@ -24,13 +26,27 @@
   align-content: center;
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
 }
+
 .blog-index-icon {
   display: flex;
-  padding: 0px 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 0.5rem 0rem;
+}
+.blog-heart-amount {
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
 }
 .icon {
   font-size: 1.5rem;
   padding: 15px 10px;
+}
+.heart-afterClick {
+  color: rgb(255, 77, 77);
+  /* background: linear-gradient(45deg, #0501ffe3 0%, #ea01ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 .blog-index-caption {
   display: flex;

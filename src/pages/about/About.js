@@ -8,7 +8,7 @@ const About = () => {
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 2.5 }}
+        transition={{ duration: 1.5 }}
       >
         <i className="fab fa-ethereum fa-10x eth" />
         Ethereum is a decentralized, open-source blockchain with smart contract

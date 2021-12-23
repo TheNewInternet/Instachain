@@ -6,7 +6,7 @@
     #4801ff 100%
   ); */
   /*text-shadow: 0 0 0.2em rgb(201, 119, 255);*/
-  padding: 0rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   height: 4.5rem;
   display: flex;
   justify-content: space-between;
@@ -25,6 +25,14 @@
 .navbar-menu {
   display: flex;
 }
+.wallet-logo {
+  font-size: 1.5rem;
+}
+.if-connect-circle {
+  padding: 0rem 0.2rem;
+  color: rgba(31, 255, 50, 0.897);
+  /* color: rgb(81, 255, 168); */
+}
 @media only screen and (max-width: 700px) {
   .navbar-menu {
     display: none;
@@ -32,7 +40,7 @@
 }
 .menu-icon {
   color: #f2f2f2;
-  padding: 0rem 2rem;
+  padding: 0rem 1rem;
   font-size: 1rem;
   text-decoration: none;
   text-align: center;
@@ -41,9 +49,27 @@
   color: #f2f2f2;
   font-size: 1.5rem;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-dropbar-wallet {
+  color: #f2f2f2;
+  font-size: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @media only screen and (min-width: 700px) {
   .navbar-dropbar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .responsive-wallet {
     display: none;
   }
 }

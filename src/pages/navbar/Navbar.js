@@ -17,23 +17,31 @@ const Navbar = ({ toggle }) => {
             Instachain
           </motion.div>
         </Link>
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-          <i className="fas fa-bars navbar-dropbar" onClick={toggle} />
-        </motion.div>
-        <div className="navbar-menu">
+        <div className="navbar-dropbar">
+          <Link to="/wallet" className="navbar-dropbar-wallet ">
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+              <i className="fas fa-wallet wallet-logo" />
+            </motion.div>
+            <i className="fas fa-xs fa-circle if-connect-circle" />
+          </Link>
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-            <Link to="/" className="menu-icon">
-              Home
-            </Link>
+            <i className="fas fa-bars navbar-dropbar" onClick={toggle} />
           </motion.div>
+        </div>
+        <div className="navbar-menu">
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
             <Link to="/Social" className="menu-icon">
               Social
             </Link>
           </motion.div>
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-            <Link to="###" className="menu-icon">
-              Wallet
+            <Link to="/Swap" className="menu-icon">
+              Myswap
+            </Link>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+            <Link to="/Poker" className="menu-icon">
+              CryptoPoker
             </Link>
           </motion.div>
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
@@ -42,6 +50,12 @@ const Navbar = ({ toggle }) => {
             </Link>
           </motion.div>
         </div>
+        <Link to="/wallet" className="navbar-dropbar-wallet responsive-wallet ">
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+            <i className="fas fa-wallet wallet-logo" />
+          </motion.div>
+          <i className="fas fa-xs fa-circle if-connect-circle" />
+        </Link>
       </nav>
     </>
   );

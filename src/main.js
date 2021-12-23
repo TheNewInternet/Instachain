@@ -7,6 +7,9 @@ import Sidebar from "./pages/sidebar/Sidebar";
 import Social from "./pages/social/Social";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
+import Swap from "./pages/swap/Swap";
+import Poker from "./pages/poker/Poker";
+import Wallet from "./pages/wallet/Wallet";
 import { useState } from "react";
 
 function Main() {
@@ -22,7 +25,10 @@ function Main() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/Social" exact component={Social} />
+        <Route path="/Swap" exact component={Swap} />
+        <Route path="/Poker" exact component={Poker} />
         <Route path="/About" exact component={About} />
+        <Route path="/Wallet" exact component={Wallet} />
       </Switch>
     </>
   );
